@@ -1,3 +1,261 @@
-body,p,h1,h2,h3{margin:0;padding:0;border:0}body{height:100vh}.wrapper{padding:0 100px}header{height:71px;display:-webkit-box;display:-ms-flexbox;display:flex}header .header__left-side,header .header__right-side{width:50%;padding-top:20px;display:-webkit-box;display:-ms-flexbox;display:flex}header .header__left-side{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}header .header__right-side{-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}header .header__contacts{padding:0 48px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.logo{height:100%;width:178px;position:relative;display:block;cursor:pointer}.logo .logo__inner-image{position:absolute;left:-2px;top:-8px;width:178px;height:60px;background-image:url(../files/logo.png);background-repeat:no-repeat}span.contacts,.contacts{font-family:"PT Sans";color:#fff;text-decoration:none;cursor:pointer;height:15px;line-height:15px}span.contacts{padding:0 20px}.menu-button{cursor:pointer;position:relative;width:30px}.menu-button .menu-button__inner-image{background-image:url(../files/menu.png);background-repeat:no-repeat;position:absolute;top:11px;width:30px;height:22px}footer{height:100px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-content{width:100%;height:calc(100vh - 171px;)}
+body, p, h1, h2, h3, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  padding: 0 100px;
+}
+
+header {
+  height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .header__left-side, header .header__right-side {
+  width: 50%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .header__left-side {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+header .header__right-side {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header .header__contacts {
+  padding: 0 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  height: 100%;
+  width: 178px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.logo .logo__inner-image {
+  position: absolute;
+  left: -2px;
+  top: -8px;
+  width: 178px;
+  height: 60px;
+  background-image: url(../files/logo.png);
+  background-repeat: no-repeat;
+}
+
+span.contacts, .contacts {
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  height: 15px;
+  line-height: 15px;
+}
+
+span.contacts {
+  padding: 0 20px;
+}
+
+.menu-button {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+}
+.menu-button .menu-button__inner-image {
+  background-image: url(../files/menu.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 11px;
+  width: 30px;
+  height: 22px;
+}
+
+footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content {
+  width: 100%;
+  /*$footer_height + $header_height*/
+  height: calc( 100% - 171px);
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.main-content .main-content__nav {
+  padding-left: 60px;
+  width: 8.6%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-content .main-content__panel {
+  width: 91.4%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+.section .section__header {
+  padding-bottom: 30px;
+  width: 100%;
+}
+.section .section__text {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0em;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  display: inline-block;
+  width: 40%;
+  padding: 36px 0;
+}
+.section .section__footer {
+  width: 100%;
+  padding: 25px 0;
+  height: 19px;
+}
+.section .radio-buttons {
+  width: 400px;
+}
+.section .radio-buttons > li {
+  line-height: 43px;
+}
+
+.poster {
+  width: 37.5%;
+  padding: 0 30px;
+}
+
+.main-topic {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0em;
+  line-height: 30px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+}
+.main-topic.big-and-bold {
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 21px;
+  height: 32px;
+}
+.main-topic.big-and-bold.underlined {
+  border-bottom: 15px solid #000ffa;
+}
+.main-topic.underlined {
+  line-height: 8px;
+  border-bottom: 5px solid #000ffa;
+}
+
+.radio-buttons {
+  list-style: none;
+  height: 265px;
+}
+.radio-buttons > li {
+  cursor: pointer;
+}
+.radio-buttons .radio-buttons__button {
+  border: 1px double #000ffa;
+  display: inline-block;
+  border-radius: 100%;
+  font-family: Arial;
+  position: relative;
+  cursor: pointer;
+  font-size: 28px;
+  padding: 1px;
+  color: #000ffa;
+}
+.radio-buttons .radio-buttons__button.bullit {
+  width: 9px;
+  height: 9px;
+  line-height: 9px;
+}
+.radio-buttons .radio-buttons__button.arrow {
+  width: 15px;
+  height: 15px;
+  background-image: url(../files/arrow-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.radio-buttons .radio-buttons__button > span {
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  font-size: 11px;
+  display: none;
+  width: 150px;
+  height: 15px;
+  color: #fff;
+  left: 22px;
+  top: 1px;
+}
+.radio-buttons .radio-buttons__button.selected > span {
+  display: inline-block;
+}
+.radio-buttons .radio-buttons__delimiter {
+  background-color: #000ffa;
+  margin: 3px 5px 10px 5px;
+  height: 50px;
+  width: 1px;
+}
 
 /*# sourceMappingURL=style.css.map */

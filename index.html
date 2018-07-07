@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
@@ -29,9 +30,93 @@
 			</div>
 		</div>
 	</header>
-	<div class="main-content">
-		
+	<div id="pagepiling" class="content main-content">
+		<div class="main-content__nav">
+			<ul class="radio-buttons">
+				<li class="radio-buttons__button bullit">•<span>Кто мы</span></li>
+				<li class="radio-buttons__delimiter"></li>
+				<li class="radio-buttons__button bullit selected">•<span>Что мы делаем</span></li>
+				<li class="radio-buttons__delimiter"></li>
+				<li class="radio-buttons__button bullit">•<span>Где мы делаем</span></li>
+				<li class="radio-buttons__delimiter"></li>
+				<li class="radio-buttons__button bullit">•<span>Когда мы делаем</span></li>
+			</ul>
+		</div>
+		<div id="pagepiling" class="main-content__panel">
+			<div class="section">
+				<div class="section__header">
+					<div>
+						<h1 class="main-topic underlined big-and-bold">Что мы делаем</h1>
+					</div>
+					<p class="section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					<ul class="radio-buttons">
+						<li>
+							<p class="radio-buttons__button arrow"></p>
+							<p class="main-topic underlined" style="margin-left: 20px">Разработка</p>
+						</li>
+						<li>
+							<p class="radio-buttons__button arrow"></p>
+							<p class="main-topic" style="margin-left: 20px">Маркетинговые исследования</p>
+						</li>
+						<li>
+							<p class="radio-buttons__button arrow"></p>
+							<p class="main-topic" style="margin-left: 20px">Дизайн</p>
+						</li>
+						<li>
+							<p class="radio-buttons__button arrow"></p>
+							<p class="main-topic" style="margin-left: 20px">Проведение ICO</p>
+						</li>
+						<li>
+							<p class="radio-buttons__button arrow"></p>
+							<p class="main-topic" style="margin-left: 20px">Контент</p>
+						</li>
+						<li>
+							<p class="radio-buttons__button arrow"></p>
+							<p class="main-topic" style="margin-left: 20px">Digital-Маркетин</p>
+							
+						</li>
+					</ul>
+				</div>
+				<div class="section__footer"></div>
+			</div>
+		</div>
 	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*$('#pagepiling').pagepiling({
+				menu: null,
+				direction: 'vertical',
+				verticalCentered: true,
+				sectionsColor: [],
+				anchors: [],
+				scrollingSpeed: 700,
+				easing: 'swing',
+				loopBottom: false,
+				loopTop: false,
+				css3: true,
+				navigation: {
+				    'textColor': '#000',
+				    'bulletsColor': '#000',
+				    'position': 'right',
+				    'tooltips': ['section1', 'section2', 'section3', 'section4']
+				},
+				normalScrollElements: null,
+				normalScrollElementTouchThreshold: 5,
+				touchSensitivity: 5,
+				keyboardScrolling: true,
+				sectionSelector: '.section',
+				animateAnchor: false,
+
+				//events
+				onLeave: function(index, nextIndex, direction){},
+				afterLoad: function(anchorLink, index){},
+				afterRender: function(){},
+				});
+			*/
+		});
+
+
+	</script>
 	<footer class="wrapper">
 		<a class="contacts" href="">Facebook</a>
 		<span class="contacts">/</span>

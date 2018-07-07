@@ -1,8 +1,10 @@
-$font: 'PT Sans';
+$font_pt: 'PT Sans', sans-serif;
+$font_os: 'Open Sans', sans-serif;
 $header_height: 71px;
 $footer_height: 100px;
+$blue: #000ffa;
 
-body,p,h1,h2,h3{
+body,p,h1,h2,h3,ul,li{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -58,7 +60,7 @@ header{
 }
 
 span.contacts, .contacts{
-	font-family: $font;
+	font-family: $font_pt;
 	color: #fff;
 	text-decoration: none;
 	cursor: pointer;
@@ -90,7 +92,151 @@ footer{
 	align-items: center;
 }
 
-.main-content{
+.content{
 	width: 100%;
-	height: calc(100vh - 171px;)
+	/*$footer_height + $header_height*/
+	height: calc( 100% - 171px);
+}
+.main-content{
+	display: flex;
+	justify-content: flex-start;
+
+	.main-content__nav{
+		padding-left: 60px;
+		width: 8.6%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.main-content__panel{
+		width: 91.4%;
+		height: 100%;
+		display: flex;
+		align-items: flex-end;
+	}
+}
+.section{
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	width: 100%;
+
+	.section__header{
+		padding-bottom: 30px;
+		width: 100%;
+	}
+
+	.section__text{
+		font-family: $font_os;
+		letter-spacing: 0em;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 30px;
+		color: #fff;
+		display: inline-block;
+		width: 40%;
+		padding: 36px 0;
+
+	}
+
+	.section__footer{
+		width: 100%;
+		padding: 25px 0;
+		height: 19px;
+	}
+	.radio-buttons{
+		width: 400px;
+
+		> li{
+			line-height: 43px;
+		}
+	}
+}
+.poster{
+	width: 37.5%;
+	padding: 0 30px;
+}
+.main-topic{
+	display: inline-block;
+	font-family: $font_os;
+	letter-spacing: 0em;
+	line-height: 30px;
+	font-weight: 300;
+	font-size: 20px;
+	color: #fff;
+
+	&.big-and-bold{
+		font-weight: 600;
+		font-size: 75px;
+		line-height: 21px;
+		height: 32px;
+
+		&.underlined {
+			border-bottom: 15px solid $blue;
+		}
+	}
+
+	&.underlined{
+		line-height: 8px;
+		border-bottom: 5px solid $blue;
+	}
+	
+}
+
+
+.radio-buttons{
+	list-style: none;
+	height: 265px;
+	>li{
+		cursor: pointer;
+	}
+
+	.radio-buttons__button{
+		border: 1px double $blue;
+		display: inline-block;
+		border-radius: 100%;
+		font-family: Arial;
+		position: relative;
+		cursor: pointer;
+		font-size: 28px;
+		padding: 1px;
+		color: $blue;
+
+		
+		&.bullit{
+			width: 9px;
+			height: 9px;
+			line-height: 9px;
+		}
+
+		&.arrow{
+			width: 15px;
+			height: 15px;
+			background-image: url(../files/arrow-right.png);
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		> span{
+			font-family: $font_os;
+			position: absolute;
+			font-size: 11px;
+			display: none;
+			width: 150px;
+			height: 15px;
+			color: #fff;
+			left: 22px;
+			top: 1px;
+		}
+		&.selected > span{
+			display: inline-block;
+		}
+	}
+	.radio-buttons__delimiter{
+		background-color: $blue;
+		margin: 3px 5px 10px 5px;
+		height: 50px;
+		width: 1px;
+	}
 }
