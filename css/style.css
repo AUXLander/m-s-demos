@@ -183,6 +183,14 @@ footer {
   height: 19px;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
 }
 .section .radio-buttons > li {
   width: 54%;
@@ -210,8 +218,8 @@ footer {
 
 .slider-panel {
   z-index: 4;
-  width: 74%;
-  left: 26.5%;
+  width: 87%;
+  left: 13.5%;
   height: 515px;
   padding: 20px;
   padding-right: 0;

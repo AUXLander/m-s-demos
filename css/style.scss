@@ -156,6 +156,9 @@ footer{
 		padding: 25px 0;
 		height: 19px;
 		align-self: center;
+		justify-content: center;
+		display: flex;
+		flex-basis: 70%;
 	}
 	.radio-buttons > li{
 		width: 54%;
@@ -180,8 +183,8 @@ footer{
 }
 .slider-panel{
 	z-index: 4;
-	width: 74%;
-	left: 26.5%;
+	width: 87%;
+	left: 13.5%;
 	height: 515px;
 	padding: 20px;
 	padding-right: 0;
