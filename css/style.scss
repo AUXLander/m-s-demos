@@ -100,7 +100,7 @@ footer{
 .content{
 	width: 100%;
 	/*$footer_height + $header_height*/
-	height: calc( 100% - 171px);
+	height: calc( 100% - 200px);
 }
 .main-content{
 	display: flex;
@@ -118,21 +118,24 @@ footer{
 	.main-content__panel{
 		width: 88.4%;
 		height: 100%;
+		overflow: hidden;
+		position: relative;
 		/*display: flex;
 		align-items: flex-end;*/
 	}
 }
 .section{
 	display: flex;
-	align-items: flex-end;
-	flex-wrap: wrap;
+	align-items: center;
 	width: 100%;
+	flex-wrap: wrap;
 	height: 100%;
+	padding-bottom: 40px;
+	transition: transform .3s ease;
 
 	.section__header{
-		padding-bottom: 30px;
+		/*padding-bottom: 30px;*/
 		width: 100%;
-		height: calc(100% - 69px);
 		position: relative;
 	}
 
@@ -152,6 +155,7 @@ footer{
 		width: 100%;
 		padding: 25px 0;
 		height: 19px;
+		align-self: center;
 	}
 	.radio-buttons > li{
 		width: 54%;
@@ -167,7 +171,8 @@ footer{
 	.section__description{
 		z-index: 6;
 		min-width: 450px;
-		width: 45%;
+		width: 606px;
+		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -322,6 +327,15 @@ footer{
 			width: 9px;
 			height: 9px;
 			line-height: 9px;
+
+			&>div{
+				width: 1px;
+				height: 1px;
+				background-color: $blue;
+				border: 3px solid $blue;
+				border-radius: 100%;
+				margin: 1px;
+			}
 		}
 
 		&.arrow{
@@ -354,10 +368,30 @@ footer{
 		width: 1px;
 	}
 }
-.pp-section.pp-table{
-	display: block !important;
-}
-.pp-section{
-	height: initial !important;
-	position: relative !important;
+
+.panel-slider-nav{
+	display: flex;
+    width: 130px;
+
+	.panel-slider-nav__prev, .panel-slider-nav__next{
+		background-image: url(../files/arrow.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		height: 20px;
+		width: 26px;
+	}
+	.panel-slider-nav__prev{
+		transform: rotate(180deg);
+	}
+	.index{
+		padding: 0 24px;
+		width: 30px;
+		height: 20px;
+		color: #fff;
+		font-family: $font_os;
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 21px;
+	}
 }
